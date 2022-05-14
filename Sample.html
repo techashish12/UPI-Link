@@ -23,6 +23,17 @@
 		window.alert(url);
 		var PT = document.getElementById("PayTag");
 		PT.href=url;
+		const qrcode = new QRCode(document.getElementById('qrcode'), {
+  text: url,
+  width: 128,
+  height: 128,
+  colorDark : '#000',
+  colorLight : '#fff',
+  correctLevel : QRCode.CorrectLevel.H
+});
+<script src="https://cdn.jsdelivr.net/gh/davidshimjs/qrcodejs/qrcode.min.js"></script>
+
+<div id="qrcode"></div>
 	</script>
 
 This is a example of UPI. And just click on below button to pay me.
