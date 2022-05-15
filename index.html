@@ -18,8 +18,10 @@
 		const QueryString = window.location.search; 
 		const urlParams = new URLSearchParams(QueryString); 
 		var com=urlParams.get("comment");
+		var com1=urlParams.get("name");
+		var word ="The Payment is Done for"+com1+"the form id is "+com
 		var url1;
-		url1=getUPILink("techashish12@okdhfc","ashish jangra",1,"INR",com);
+		url1=getUPILink("techashish12@okdhfc","ashish jangra",1,"INR",word);
 		window.alert(url1);
 		const attr = document.createAttribute("href");
 attr.value = url1;
