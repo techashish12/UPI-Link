@@ -26,7 +26,7 @@
 		const attr = document.createAttribute("href");
 attr.value = url1;
 
-const h1 = document.getElementsById("PayTag");
+const h1 = document.getElementById("PayTag");
 h1.setAttributeNode(attr);
 		const qrcode = new QRCode(document.getElementById('qrcode'), {
   text: url,
