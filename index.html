@@ -65,9 +65,9 @@ body {
 		const urlParams = new URLSearchParams(QueryString); 
 		var com=urlParams.get("comment");
 		var com1=urlParams.get("name");
-		var word ="The Payment is Done for"+com1+"the form id is "+com
+		var word ="The Payment is Done for "+com1+" The form id is "+com
 		var url1;
-		url1=getUPILink("techashish12@okhdfc","ashish jangra",1,"INR",word);
+		url1=getUPILink("techashish12@okhdfcbank","ashish jangra",1,"INR",word);
 		window.alert(url1);
 		
 
@@ -76,8 +76,8 @@ var h1 = document.getElementById("PayTag");
 h1.setAttribute('href', url1);
 		const qrcode = new QRCode(document.getElementById('qrcode'), {
   text: url1,
-  width: 128,
-  height: 128,
+  width: 256,
+  height: 256,
   colorDark : '#000',
   colorLight : '#fff',
   correctLevel : QRCode.CorrectLevel.H
