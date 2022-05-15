@@ -54,7 +54,8 @@ body {
 		
 
 var h1 = document.getElementById("PayTag");
-h1.setAttribute("href", url1);
+		console.log(h1);
+h1.setAttribute('href', url1);
 		const qrcode = new QRCode(document.getElementById('qrcode'), {
   text: url,
   width: 128,
