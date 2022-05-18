@@ -71,9 +71,13 @@ body {
 		var com1=urlParams.get("name");
 		var word ="The Payment is Done for "+com1+" The form id is "+com
 		var url1;
+		var url2;
 		url1=getUPILink("techashish12-1@okaxis","ashish jangra",150,"INR",word);
+		url2=getUPILink1("techashish12-1@okaxis","ashish jangra","INR",word);
 		
-		
+		var h1 = document.getElementById("PayTag");
+		console.log(h1);
+h1.setAttribute('href', url2);
 
 
 		const qrcode = new QRCode(document.getElementById('qrcode'), {
@@ -87,12 +91,12 @@ body {
 		
 </script>
 	<script>
-		var div1 = document.getElementById('qrcode');
-		var exampleAttr= div1.getAttribute('title');
+		//var div1 = document.getElementById('qrcode');
+		//var exampleAttr= div1.getAttribute('title');
 		//alert(exampleAttr);
-		var h1 = document.getElementById("PayTag");
-		console.log(h1);
-h1.setAttribute('href', exampleAttr);
+		//var h1 = document.getElementById("PayTag");
+		//console.log(h1);
+//h1.setAttribute('h/ref', exampleAttr);
 		
 	</script>
 </body>
