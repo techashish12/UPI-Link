@@ -8,7 +8,7 @@ function getUPILink(vpa, name,r,t,com)
 function getUPILink1(vpa, name,t,com)
 {
   var upiLink1;
-  upiLink= "upi://pay?pa=" + vpa + "&pn=" + name+"&cu="+t+"&tn="+com;
+  upiLink1= "upi://pay?pa=" + vpa + "&pn=" + name+"&cu="+t+"&tn="+com;
 
   return upiLink1;
 }
