@@ -68,7 +68,7 @@ body {
 
 <body>
 <img src="header.gif" class="res"/>
-	<h1>hello <span id="myname">Your form has been submitted .Please Pay the payment <B>150</B> for confirm your register or you can also pay money at the venue .your unqiue id is <span id="myid"></span> take screen shot of this page </h1>
+	<h1>hello <span id="myname"></span>Your form has been submitted .Please Pay the payment <B>150</B> for confirm your register or you can also pay money at the venue .your unqiue id is <span id="myid"></span> take screen shot of this page </h1>
 <h1>scan the qr code  </h1>
 	<h2>IF U HAVE ANY PROBLEM REGARDING PAYMENT WHATSAPP ME <a href="https://wa.me/918619084985">8619084985</a> ON THIS NUMBER </h2>
 	
@@ -92,8 +92,8 @@ body {
 		const urlParams = new URLSearchParams(QueryString); 
 		var com=urlParams.get("comment");
 		var com1=urlParams.get("name");
-		document.getElementById("myname").value=com1;
-			document.getElementById("myid").value=com;
+		document.getElementById("myname").innerHTML=com1;
+			document.getElementById("myid").innerHTML=com;
 		var word ="The Payment is Done for "+com1+" The form id is "+com
 		var url1;
 		url1=getUPILink("techashish12-1@okaxis","ashish jangra",150,"INR",word);
